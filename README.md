@@ -1,5 +1,4 @@
 ﻿# Blood-Cells-Recognition
-# Blood-Cells-Recognition.
 Dataset
 The Complete Blood Count (CBC) Dataset  has been used for automatic identification and counting of blood cells. Download the dataset, unzip and put the Training, Testing, and Validationfolders in the working directory.
 Getting Started
