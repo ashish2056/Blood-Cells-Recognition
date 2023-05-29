@@ -1,0 +1,20 @@
+theme: jekyll-theme-cayman
+# Dataset Configuration File
+
+train:
+  image_folder: Blood_cells_dataset/Training/Images
+  annotation_folder: Blood_cells_dataset/Training/Annotations
+
+test:
+  image_folder: Blood_cells_dataset/Testing/Images
+  annotation_folder: Blood_cells_dataset/Testing/Annotations
+
+valid:
+  image_folder: Blood_cells_dataset/Validation/Images
+  annotation_folder: Blood_cells_dataset/Validation/Annotations
+
+class_names:
+  - RBC
+  - WBC
+  - Platelets
+

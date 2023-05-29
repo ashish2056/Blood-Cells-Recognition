@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>!!!Blood Cells classification!!!</title>
+    <style>
+      body
+      {  
+        background-image: url("web_app_background_image.png");
+         background-size: cover;
+          background-repeat: no-repeat;
+      }
+      h1 {
+        margin-top: 20px;
+        color:black;
+      }
+      .choose {
+        width: 700px;
+        
+      }
+      .file{
+        margin-left: 320px;
+        margin-top: 50px;
+        
+      }
+      .btn{
+        padding: 14px 40px;
+        font-size: 20px;
+        font-family: "Snell Roundhand";
+        letter-spacing: 1px;
+        color:black;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        
+        margin-top: 30px;
+      }
+      .btn:hover{
+        box-shadow: rgb(255 255 255/ 100%) 0 8px 15px;
+        transform: translateY(-2px);
+        color: white;
+
+       }
+       .text1{
+        
+        font-family: "Snell Roundhand";
+        font-size: 25px;
+        color: white;
+       }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="text-center" style="font-family: Snell Roundhand;">Blood Cells Classification & Counting</h1>
+    <form class="p-3 text-center" action="/", method="post" enctype="multipart/form-data">
+      <div class="file">
+        <input class="form-control choose" type="file" name="imagefile" style="background-color: rgb(255,255,255);">
+      </div>
+      <div class="button">
+        <input class="btn " type="submit" value="Predict">
+      </div>  
+    </form>
+    
+    
+    <div class="text1">
+    {%if RBC %}
+      <p class="text-center">Total RBC: {{RBC}}</p>
+    {% endif %}  
+    {%if RBC %}
+      <p class="text-center">Total WBC: {{WBC}}</p>
+    {% endif %} 
+    {%if RBC %}
+      <p class="text-center">Total Platelates: {{Plat}}</p>
+    {% endif %} 
+    </div>
+
+
+    
+  </body>
+</html>
